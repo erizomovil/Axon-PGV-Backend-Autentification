@@ -29,6 +29,7 @@ public class PruebaTokenApplication {
 	            .authorizeHttpRequests(authz -> authz
 	                .requestMatchers("/login").permitAll()
 	                .requestMatchers("/register").permitAll()
+	                .requestMatchers("/health").permitAll()
 	                .anyRequest().authenticated()
 	            )
 	            .formLogin().disable() 
