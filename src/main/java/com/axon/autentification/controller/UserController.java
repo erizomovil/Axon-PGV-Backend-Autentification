@@ -81,8 +81,8 @@ public class UserController {
             user.setUsername(username);
             user.setEmail(email);
             user.setToken(getJWTToken(username));
-	    user.setlevel(1);
-	    user.setexperience(0);
+	    user.setLevel(1);
+	    user.setExperience(0);
             user.setHashedPassword(passwordHasher(pwd));
             userRepository.save(user);
 
